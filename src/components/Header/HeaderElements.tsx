@@ -11,9 +11,8 @@ export const Nav = styled.ul`
     width : 40%;
     max-width : 500px;
     padding : 30px;
-    background-color :;
     li{
-        font-weight: 500 ;
+        font-weight: 700 ;
         font-size : 1.2rem;
         display : flex;
         justify-content : center;
