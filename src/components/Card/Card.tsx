@@ -30,8 +30,8 @@ const Wrapper = styled.div`
 const Card = () => {
   const cardDetail = {
     name: "John Doe",
-    cardNumber: "4546 6354 5353 3434",
-    expiry_date: "13/24",
+    cardNumber: "4324 5433 9382 1030",
+    expiry_date: "03/24",
   };
   return (
     <Wrapper>

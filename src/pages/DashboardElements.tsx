@@ -71,11 +71,14 @@ export const Cards = styled.div`
       left : 5px;
       top : 15px;
     }
+    .image{
+      padding : 10px;
+    }
 `
 export const Total = styled.div`
   width : 100%;
   margin-top : 1rem;
-  padding-bottom: 1rem ;
+  padding-bottom: 1rem;
   .total{
       display : flex;
       font-weight : 500;
