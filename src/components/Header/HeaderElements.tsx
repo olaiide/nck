@@ -14,9 +14,10 @@ export const Nav = styled.ul`
     li{
         font-weight: 700 ;
         font-size : 1.2rem;
-        display : flex;
-        justify-content : center;
-        flex-direction : column;        
+        &:last-child{
+            position : relative;
+            bottom : 25px;
+        }
     }
 `
 export const Divider = styled.div`
