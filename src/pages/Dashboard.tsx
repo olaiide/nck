@@ -2,12 +2,16 @@ import React from "react";
 import Header from "../components/Header/Header";
 import Button from "../components/Button/Button";
 import Card from "../components/Card/Card";
+import Visa from "../assets/Visa.jpg";
+import Paypal from "../assets/paypal.png";
+import Discover from "../assets/discover.png"
 import {
   Container,
   Wrapper,
   Payment,
   LeftContent,
   RightContent,
+  Cards,
   Total,
   CompletePayment
 } from "./DashboardElements";
@@ -29,6 +33,12 @@ const Dashboard = () => {
             <Card />
           </LeftContent>
           <RightContent>
+            <Cards>
+              <img src={Visa} alt="''" width="35px" style={{padding : '10px'}}/>  
+              <img src={Discover} alt="" width="30px" style={{padding : '10px'}}/>
+              <img src={Paypal} alt="" width="50px" style={{padding : '10px'}}/>
+            
+            </Cards>
             <form className='form__container'>
               <div className='form__grid'>
                 <div>

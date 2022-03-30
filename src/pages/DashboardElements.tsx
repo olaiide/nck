@@ -62,6 +62,11 @@ width : 40%;
     }
 }
 `;
+export const Cards = styled.div`
+    display: flex ;
+    justify-content: flex-end;
+    padding : 5px;
+`
 export const Total = styled.div`
   width : 100%;
   margin-top : 1rem;
