@@ -66,6 +66,11 @@ export const Cards = styled.div`
     display: flex ;
     justify-content: flex-end;
     padding : 5px;
+    .radio_check {
+      position : relative;
+      left : 5px;
+      top : 15px;
+    }
 `
 export const Total = styled.div`
   width : 100%;

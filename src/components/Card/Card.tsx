@@ -2,11 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import cardchip from "../../assets/chip.png";
 import MastercardLogo from "../../assets/mastercard.svg";
-// interface Prop {
-//     name : string;
-//     cardNumber : string;
-//     expiry_date : string;
-// }
+
 const Wrapper = styled.div`
   border-radius: 6px;
   color: #fff;
@@ -47,7 +43,7 @@ const Card = () => {
         <p>{cardDetail.expiry_date}</p>
         <div className='card_footer'>
           <p>{cardDetail.name}</p>
-          <img src={MastercardLogo} width='100px' alt='mastervard logo' />
+          <img src={MastercardLogo} width='100px' alt='mastercard logo' />
         </div>
       </div>
     </Wrapper>

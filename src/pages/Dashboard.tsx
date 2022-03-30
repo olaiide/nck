@@ -36,10 +36,11 @@ const Dashboard = () => {
             <Cards>
               <img src={Visa} alt="''" width="35px" style={{padding : '10px'}}/>  
               <img src={Discover} alt="" width="30px" style={{padding : '10px'}}/>
+              <input type='radio' className='radio_check'/>{" "}
               <img src={Paypal} alt="" width="50px" style={{padding : '10px'}}/>
             
             </Cards>
-            <form className='form__container'>
+            <form>
               <div className='form__grid'>
                 <div>
                   <label>Credit card cumber</label>
