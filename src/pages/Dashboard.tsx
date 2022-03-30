@@ -1,6 +1,7 @@
 import React from "react";
 import Header from "../components/Header/Header";
 import Button from "../components/Button/Button";
+import Card from "../components/Card/Card";
 import {
   Container,
   Wrapper,
@@ -8,9 +9,15 @@ import {
   LeftContent,
   RightContent,
   Total,
+  CompletePayment
 } from "./DashboardElements";
 import { Divider } from "../components/Header/HeaderElements";
 const Dashboard = () => {
+  const TotalData = [
+    { name: "Subtotal", price: " ₦2,497.00" },
+    { name: "Estimated TAX", price: " ₦119.64" },
+    { name: "Promotional Code", price: " ₦-60.00", code: " : Z4KXLM9A" },
+  ];
   return (
     <Container>
       <Wrapper>
@@ -18,8 +25,8 @@ const Dashboard = () => {
         <Payment>
           <LeftContent>
             <h2>Payment Information</h2>
-            <p>Choose your method of payment.</p>
-            <div>Card</div>
+            <p style={{ opacity: "0.5" }}>Choose your method of payment.</p>
+            <Card />
           </LeftContent>
           <RightContent>
             <form className='form__container'>
@@ -52,22 +59,26 @@ const Dashboard = () => {
           </RightContent>
         </Payment>
         <Divider></Divider>
-        <Total>
-          <div>
-            <h3>Subtotal</h3>
-            <h3> ₦2,497.00</h3>
-          </div>
-          <div>
-            <h3>Estimated TAX</h3>
-            <h3> ₦119.64</h3>
-          </div>
-          <div>
-            <h3>
-              Promotional Code: <span>Z4KXLM9A</span>
-            </h3>
-            <h3> ₦-60.00</h3>
-          </div>
-        </Total>
+        <Payment>
+          <Total>
+            {TotalData.map((item, index) => (
+              <div className='total' key={index}>
+                <div>
+                  {item.name}
+                  <span style={{ opacity: "0.5" }}>{item.code}</span>
+                </div>
+                <div>{item.price}</div>
+              </div>
+            ))}
+          </Total>
+        </Payment>
+        <Divider></Divider>
+        <Payment>
+         <CompletePayment>
+             <Button children={'Complete payment'} size="small"/>
+             <div>TOTAL :₦2556.64 </div>
+         </CompletePayment>
+         </Payment>
       </Wrapper>
     </Container>
   );

@@ -3,7 +3,7 @@ interface Prop {
     size : string
 }
 export const ButtonWrapper = styled.button<Prop>`
-     width: ${(props) => (props.size === "small" ? "115px;" : "100%")};
+     width: ${(props) => (props.size === "small" ? "130px;" : "100%")};
      height: 40px;
      background : rgb(53, 124, 218);
      margin : 0px 0;

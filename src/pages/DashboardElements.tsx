@@ -11,10 +11,12 @@ export const Payment = styled.div`
   justify-content: space-between;
   width: 95%;
   margin: 0 auto;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 `;
 
-export const LeftContent = styled.div``;
+export const LeftContent = styled.div`
+width : 40%;
+`;
 export const RightContent = styled.div`
 width : 40%;
 .form__grid{
@@ -61,5 +63,24 @@ width : 40%;
 }
 `;
 export const Total = styled.div`
-
+  width : 100%;
+  margin-top : 1rem;
+  padding-bottom: 1rem ;
+  .total{
+      display : flex;
+      font-weight : 500;
+      font-size : 13px;
+      justify-content:space-between ;
+      padding : 5px;
+  }
 `;
+export const CompletePayment = styled.div`
+    display: flex;
+    justify-content: space-between;
+    width : 100%;
+    margin-top : 2rem;
+    div {
+        font-weight : 800;
+        font-size : 17px;
+    }
+`
